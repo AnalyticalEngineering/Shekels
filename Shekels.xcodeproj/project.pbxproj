@@ -14,6 +14,34 @@
 		129E83102B1176D8002FFA62 /* ShekelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E830F2B1176D8002FFA62 /* ShekelsTests.swift */; };
 		129E831A2B1176D8002FFA62 /* ShekelsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E83192B1176D8002FFA62 /* ShekelsUITests.swift */; };
 		129E831C2B1176D8002FFA62 /* ShekelsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E831B2B1176D8002FFA62 /* ShekelsUITestsLaunchTests.swift */; };
+		129E83302B117808002FFA62 /* ShekelsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 129E832E2B117808002FFA62 /* ShekelsModel.xcdatamodeld */; };
+		129E83322B117A7C002FFA62 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E83312B117A7C002FFA62 /* CoreDataProvider.swift */; };
+		129E83342B117ADC002FFA62 /* UITransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E83332B117ADC002FFA62 /* UITransformer.swift */; };
+		129E83362B117C30002FFA62 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E83352B117C30002FFA62 /* UIExtension.swift */; };
+		129E83382B117C6F002FFA62 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E83372B117C6F002FFA62 /* Date+Extension.swift */; };
+		129E833A2B117C8F002FFA62 /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E83392B117C8F002FFA62 /* HapticsManager.swift */; };
+		129E833C2B117CB4002FFA62 /* CustomOperator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E833B2B117CB4002FFA62 /* CustomOperator.swift */; };
+		129E83402B117D0F002FFA62 /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E833F2B117D0F002FFA62 /* PreviewData.swift */; };
+		129E83422B117D53002FFA62 /* ReminderStatsBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E83412B117D53002FFA62 /* ReminderStatsBuilder.swift */; };
+		129E83442B117D89002FFA62 /* BudgetListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E83432B117D89002FFA62 /* BudgetListModel.swift */; };
+		129E83462B117FA8002FFA62 /* BudgetList+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E83452B117FA8002FFA62 /* BudgetList+CoreDataClass.swift */; };
+		129E83482B117FE2002FFA62 /* ReminderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E83472B117FE2002FFA62 /* ReminderModel.swift */; };
+		129E834A2B118108002FFA62 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E83492B118108002FFA62 /* NotificationManager.swift */; };
+		129E834C2B11816C002FFA62 /* ReminderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E834B2B11816C002FFA62 /* ReminderService.swift */; };
+		129E83502B11862E002FFA62 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E834F2B11862E002FFA62 /* HomeView.swift */; };
+		129E83522B11AF23002FFA62 /* ReminderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E83512B11AF23002FFA62 /* ReminderListView.swift */; };
+		129E83542B11AF93002FFA62 /* ReminderStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E83532B11AF93002FFA62 /* ReminderStatView.swift */; };
+		129E83562B11AFC2002FFA62 /* BudgetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E83552B11AFC2002FFA62 /* BudgetListView.swift */; };
+		129E83582B11AFD8002FFA62 /* AddNewBudgetListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E83572B11AFD8002FFA62 /* AddNewBudgetListView.swift */; };
+		129E835E2B11BDEB002FFA62 /* TabModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E835D2B11BDEB002FFA62 /* TabModel.swift */; };
+		129E83602B11BE23002FFA62 /* TabBarHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E835F2B11BE23002FFA62 /* TabBarHome.swift */; };
+		129E83622B11BE5E002FFA62 /* ExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E83612B11BE5E002FFA62 /* ExpenseView.swift */; };
+		129E83642B11BE84002FFA62 /* TabShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E83632B11BE84002FFA62 /* TabShape.swift */; };
+		129E83662B11BEA0002FFA62 /* TabPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E83652B11BEA0002FFA62 /* TabPosition.swift */; };
+		129E83682B11C8A7002FFA62 /* ReminderCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E83672B11C8A7002FFA62 /* ReminderCellView.swift */; };
+		129E836A2B11C8BC002FFA62 /* ReminderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E83692B11C8BC002FFA62 /* ReminderDetailView.swift */; };
+		129E836C2B11D18E002FFA62 /* BudgetListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E836B2B11D18E002FFA62 /* BudgetListDetailView.swift */; };
+		129E836E2B11D1A3002FFA62 /* BudgetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E836D2B11D1A3002FFA62 /* BudgetCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +73,34 @@
 		129E83152B1176D8002FFA62 /* ShekelsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShekelsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		129E83192B1176D8002FFA62 /* ShekelsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShekelsUITests.swift; sourceTree = "<group>"; };
 		129E831B2B1176D8002FFA62 /* ShekelsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShekelsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		129E832F2B117808002FFA62 /* ShekelsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ShekelsModel.xcdatamodel; sourceTree = "<group>"; };
+		129E83312B117A7C002FFA62 /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
+		129E83332B117ADC002FFA62 /* UITransformer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITransformer.swift; sourceTree = "<group>"; };
+		129E83352B117C30002FFA62 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		129E83372B117C6F002FFA62 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		129E83392B117C8F002FFA62 /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		129E833B2B117CB4002FFA62 /* CustomOperator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOperator.swift; sourceTree = "<group>"; };
+		129E833F2B117D0F002FFA62 /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		129E83412B117D53002FFA62 /* ReminderStatsBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStatsBuilder.swift; sourceTree = "<group>"; };
+		129E83432B117D89002FFA62 /* BudgetListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetListModel.swift; sourceTree = "<group>"; };
+		129E83452B117FA8002FFA62 /* BudgetList+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BudgetList+CoreDataClass.swift"; sourceTree = "<group>"; };
+		129E83472B117FE2002FFA62 /* ReminderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderModel.swift; sourceTree = "<group>"; };
+		129E83492B118108002FFA62 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		129E834B2B11816C002FFA62 /* ReminderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderService.swift; sourceTree = "<group>"; };
+		129E834F2B11862E002FFA62 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		129E83512B11AF23002FFA62 /* ReminderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderListView.swift; sourceTree = "<group>"; };
+		129E83532B11AF93002FFA62 /* ReminderStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderStatView.swift; sourceTree = "<group>"; };
+		129E83552B11AFC2002FFA62 /* BudgetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetListView.swift; sourceTree = "<group>"; };
+		129E83572B11AFD8002FFA62 /* AddNewBudgetListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBudgetListView.swift; sourceTree = "<group>"; };
+		129E835D2B11BDEB002FFA62 /* TabModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabModel.swift; sourceTree = "<group>"; };
+		129E835F2B11BE23002FFA62 /* TabBarHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarHome.swift; sourceTree = "<group>"; };
+		129E83612B11BE5E002FFA62 /* ExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseView.swift; sourceTree = "<group>"; };
+		129E83632B11BE84002FFA62 /* TabShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabShape.swift; sourceTree = "<group>"; };
+		129E83652B11BEA0002FFA62 /* TabPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabPosition.swift; sourceTree = "<group>"; };
+		129E83672B11C8A7002FFA62 /* ReminderCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderCellView.swift; sourceTree = "<group>"; };
+		129E83692B11C8BC002FFA62 /* ReminderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailView.swift; sourceTree = "<group>"; };
+		129E836B2B11D18E002FFA62 /* BudgetListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetListDetailView.swift; sourceTree = "<group>"; };
+		129E836D2B11D1A3002FFA62 /* BudgetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +151,13 @@
 		129E82FC2B1176D6002FFA62 /* Shekels */ = {
 			isa = PBXGroup;
 			children = (
-				129E82FD2B1176D6002FFA62 /* ShekelsApp.swift */,
+				129E835A2B11BDC5002FFA62 /* TabBarPackage */,
+				129E832C2B117776002FFA62 /* Manager */,
+				129E832B2B117773002FFA62 /* Provider */,
+				129E832A2B117770002FFA62 /* Extensions */,
+				129E83292B11776D002FFA62 /* Support */,
+				129E832D2B1177AC002FFA62 /* Models */,
+				129E83282B117747002FFA62 /* Views */,
 				129E82FF2B1176D6002FFA62 /* ContentView.swift */,
 				129E83012B1176D7002FFA62 /* Assets.xcassets */,
 				129E83032B1176D7002FFA62 /* Shekels.entitlements */,
@@ -127,6 +189,100 @@
 				129E831B2B1176D8002FFA62 /* ShekelsUITestsLaunchTests.swift */,
 			);
 			path = ShekelsUITests;
+			sourceTree = "<group>";
+		};
+		129E83282B117747002FFA62 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				129E834F2B11862E002FFA62 /* HomeView.swift */,
+				129E83512B11AF23002FFA62 /* ReminderListView.swift */,
+				129E83532B11AF93002FFA62 /* ReminderStatView.swift */,
+				129E83552B11AFC2002FFA62 /* BudgetListView.swift */,
+				129E83572B11AFD8002FFA62 /* AddNewBudgetListView.swift */,
+				129E83612B11BE5E002FFA62 /* ExpenseView.swift */,
+				129E83672B11C8A7002FFA62 /* ReminderCellView.swift */,
+				129E83692B11C8BC002FFA62 /* ReminderDetailView.swift */,
+				129E836B2B11D18E002FFA62 /* BudgetListDetailView.swift */,
+				129E836D2B11D1A3002FFA62 /* BudgetCard.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		129E83292B11776D002FFA62 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				129E83332B117ADC002FFA62 /* UITransformer.swift */,
+				129E83392B117C8F002FFA62 /* HapticsManager.swift */,
+				129E833B2B117CB4002FFA62 /* CustomOperator.swift */,
+				129E833F2B117D0F002FFA62 /* PreviewData.swift */,
+				129E834B2B11816C002FFA62 /* ReminderService.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		129E832A2B117770002FFA62 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				129E83352B117C30002FFA62 /* UIExtension.swift */,
+				129E83372B117C6F002FFA62 /* Date+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		129E832B2B117773002FFA62 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				129E83312B117A7C002FFA62 /* CoreDataProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		129E832C2B117776002FFA62 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				129E83492B118108002FFA62 /* NotificationManager.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		129E832D2B1177AC002FFA62 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				129E82FD2B1176D6002FFA62 /* ShekelsApp.swift */,
+				129E832E2B117808002FFA62 /* ShekelsModel.xcdatamodeld */,
+				129E83412B117D53002FFA62 /* ReminderStatsBuilder.swift */,
+				129E83432B117D89002FFA62 /* BudgetListModel.swift */,
+				129E83452B117FA8002FFA62 /* BudgetList+CoreDataClass.swift */,
+				129E83472B117FE2002FFA62 /* ReminderModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		129E835A2B11BDC5002FFA62 /* TabBarPackage */ = {
+			isa = PBXGroup;
+			children = (
+				129E835C2B11BDD8002FFA62 /* Views */,
+				129E835B2B11BDD1002FFA62 /* Models */,
+			);
+			path = TabBarPackage;
+			sourceTree = "<group>";
+		};
+		129E835B2B11BDD1002FFA62 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				129E835D2B11BDEB002FFA62 /* TabModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		129E835C2B11BDD8002FFA62 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				129E835F2B11BE23002FFA62 /* TabBarHome.swift */,
+				129E83632B11BE84002FFA62 /* TabShape.swift */,
+				129E83652B11BEA0002FFA62 /* TabPosition.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +415,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				129E834C2B11816C002FFA62 /* ReminderService.swift in Sources */,
+				129E83302B117808002FFA62 /* ShekelsModel.xcdatamodeld in Sources */,
+				129E83522B11AF23002FFA62 /* ReminderListView.swift in Sources */,
+				129E83362B117C30002FFA62 /* UIExtension.swift in Sources */,
+				129E83482B117FE2002FFA62 /* ReminderModel.swift in Sources */,
+				129E83442B117D89002FFA62 /* BudgetListModel.swift in Sources */,
+				129E836E2B11D1A3002FFA62 /* BudgetCard.swift in Sources */,
+				129E83662B11BEA0002FFA62 /* TabPosition.swift in Sources */,
+				129E83502B11862E002FFA62 /* HomeView.swift in Sources */,
+				129E83542B11AF93002FFA62 /* ReminderStatView.swift in Sources */,
+				129E833C2B117CB4002FFA62 /* CustomOperator.swift in Sources */,
+				129E83462B117FA8002FFA62 /* BudgetList+CoreDataClass.swift in Sources */,
+				129E836C2B11D18E002FFA62 /* BudgetListDetailView.swift in Sources */,
+				129E834A2B118108002FFA62 /* NotificationManager.swift in Sources */,
+				129E83402B117D0F002FFA62 /* PreviewData.swift in Sources */,
 				129E83002B1176D6002FFA62 /* ContentView.swift in Sources */,
+				129E835E2B11BDEB002FFA62 /* TabModel.swift in Sources */,
+				129E83642B11BE84002FFA62 /* TabShape.swift in Sources */,
 				129E82FE2B1176D6002FFA62 /* ShekelsApp.swift in Sources */,
+				129E83602B11BE23002FFA62 /* TabBarHome.swift in Sources */,
+				129E83382B117C6F002FFA62 /* Date+Extension.swift in Sources */,
+				129E836A2B11C8BC002FFA62 /* ReminderDetailView.swift in Sources */,
+				129E83682B11C8A7002FFA62 /* ReminderCellView.swift in Sources */,
+				129E83322B117A7C002FFA62 /* CoreDataProvider.swift in Sources */,
+				129E833A2B117C8F002FFA62 /* HapticsManager.swift in Sources */,
+				129E83562B11AFC2002FFA62 /* BudgetListView.swift in Sources */,
+				129E83582B11AFD8002FFA62 /* AddNewBudgetListView.swift in Sources */,
+				129E83422B117D53002FFA62 /* ReminderStatsBuilder.swift in Sources */,
+				129E83342B117ADC002FFA62 /* UITransformer.swift in Sources */,
+				129E83622B11BE5E002FFA62 /* ExpenseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -617,6 +801,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		129E832E2B117808002FFA62 /* ShekelsModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				129E832F2B117808002FFA62 /* ShekelsModel.xcdatamodel */,
+			);
+			currentVersion = 129E832F2B117808002FFA62 /* ShekelsModel.xcdatamodel */;
+			path = ShekelsModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 129E82F22B1176D6002FFA62 /* Project object */;
 }
