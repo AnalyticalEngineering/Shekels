@@ -4,6 +4,7 @@
         <attribute name="color" attributeType="Transformable" valueTransformerName="UIColorTransformer" customClassName="UIColor"/>
         <attribute name="icon" attributeType="String"/>
         <attribute name="name" attributeType="String"/>
+        <attribute name="totAmount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
         <relationship name="reminders" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Reminder" inverseName="list" inverseEntity="Reminder"/>
     </entity>
     <entity name="Reminder" representedClassName="Reminder" syncable="YES" codeGenerationType="class">

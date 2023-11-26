@@ -39,8 +39,9 @@ struct HomeView: View {
     var body: some View {
         
         NavigationStack {
+            Spacer()
             VStack {
-                
+                //MARK:  BILL COUNT STAT BOARD
                 Text("Bill Count")
                     .offset(y: /*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
                     .offset(x: -120)
@@ -58,7 +59,8 @@ struct HomeView: View {
                         
                     } .background(.gray)
                         .padding([.leading, .trailing], 4)
-                        .cornerRadius(30)
+                        .clipShape(RoundedRectangle(cornerRadius: 15, style: .continuous))
+                    
                     NavigationLink {
                         ReminderListView()
                     } label: {
@@ -66,9 +68,10 @@ struct HomeView: View {
                     }
                     .background(.gray)
                     .padding([.leading, .trailing], 4)
-                    .cornerRadius(30)
+                    .clipShape(RoundedRectangle(cornerRadius: 15.0))
                 }
                 .padding([.leading, .trailing], 10)
+                VStack{
                 ScrollView{
                     Text("Budgets")
                         .offset(y: /*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
@@ -80,65 +83,70 @@ struct HomeView: View {
                     
                     //MARK:  BUDGET LIST VIEW
                     BudgetListView( budgetList: budgetListResults)
+                }  .listStyle(.plain)
                 }
-            }
-            .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
+            }.navigationTitle("Budgets & Bills")
+            .toolbar{
+                //MARK:  TOOL BAR
+                ToolbarItem( placement: .topBarTrailing) {
                     Button {
-                        HapticManager.notification(type: .success)
                         isPresented = true
                     } label: {
-                        Image(systemName: "plus.circle.fill")
-                            .font(.title)
-                            .foregroundStyle(.colorBlue)
+                        ZStack{
+                            Circle()
+                            Image(systemName: "plus")
+                                .foregroundStyle(.white)
+                        }
+                        .font(.title3)
+                        .fontWeight(.bold)
+                        .frame(width: 30, height: 30)
+                    }
                     }
                 }
+            .toolbar{
                 ToolbarItem(placement: .topBarLeading) {
                     Button {
                         HapticManager.notification(type: .success)
+                        print("menu")
                     } label: {
                         Image(systemName: "line.3.horizontal")
-                            .font(.title)
-                            .foregroundStyle(.colorBlue)
+                            .fontDesign(.serif)
+                            .font(.title3)
+                            .fontWeight(.bold)
                     }
                 }
             }
-        }
+            }
         .searchable(text: $search)
             .sheet(isPresented: $isPresented) {
                 NavigationView {
-                    //                        AddNewBudgetListView { name, icon, color in
-                    //                            do {
-                    //                                try ReminderService.saveBudgetList(name, icon: icon, color )
-                    //                            } catch {
-                    //                                print(error)
-                    //                            }
-                    //                        }
-                    //                    }
+                    AddNewBudgetListView { name, icon, color in
+                        do {
+                            try ReminderService.saveBudgetList(name, icon: icon, color )
+                        } catch {
+                            print(error)
+                        }
+                    }
+                  
                 }
-                .listStyle(.plain)
-                .onChange(of: search, perform: { searchTerm in
-                    searching = !searchTerm.isEmpty ? true: false
-                    searchResults.nsPredicate = ReminderService.getRemindersBySearchTerm(search).predicate
-                })
-                .overlay(alignment: .center, content: {
-                    ReminderListView()
-                        .opacity(searching ? 1.0: 0.0)
-                })
-                .onAppear {
-                    reminderStatsValues = reminderStatsBuilder.build(budgetListResults: budgetListResults)
-                }
-                .padding()
-                .navigationTitle("Budgets & Bills")
             }
-            //MARK:  ADD NEW BUDGET BUTTON
-            
-               
+        .onChange(of: search, perform: { searchTerm in
+            searching = !searchTerm.isEmpty ? true: false
+            searchResults.nsPredicate = ReminderService.getRemindersBySearchTerm(search).predicate
+        })
+        .overlay(alignment: .center, content: {
+            ReminderListView()
+                .opacity(searching ? 1.0: 0.0)
+        })
+        .onAppear {
+            reminderStatsValues = reminderStatsBuilder.build(budgetListResults: budgetListResults)
         }
-        
+        .padding()
+        .navigationTitle("Budgets & Bills")
+    }
     }
 
-
+    
  struct HomeView_Previews: PreviewProvider {
      static var previews: some View {
          HomeView()

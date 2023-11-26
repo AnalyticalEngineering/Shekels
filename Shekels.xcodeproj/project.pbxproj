@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		125C9B012B140092001A4FA5 /* BudgetPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125C9B002B140092001A4FA5 /* BudgetPicker.swift */; };
 		129E82FE2B1176D6002FFA62 /* ShekelsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E82FD2B1176D6002FFA62 /* ShekelsApp.swift */; };
 		129E83002B1176D6002FFA62 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E82FF2B1176D6002FFA62 /* ContentView.swift */; };
 		129E83022B1176D7002FFA62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 129E83012B1176D7002FFA62 /* Assets.xcassets */; };
@@ -42,6 +43,8 @@
 		129E836A2B11C8BC002FFA62 /* ReminderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E83692B11C8BC002FFA62 /* ReminderDetailView.swift */; };
 		129E836C2B11D18E002FFA62 /* BudgetListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E836B2B11D18E002FFA62 /* BudgetListDetailView.swift */; };
 		129E836E2B11D1A3002FFA62 /* BudgetCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E836D2B11D1A3002FFA62 /* BudgetCard.swift */; };
+		129E83702B125724002FFA62 /* SelectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E836F2B125724002FFA62 /* SelectListView.swift */; };
+		129E83722B125913002FFA62 /* IconPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129E83712B125913002FFA62 /* IconPickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		125C9B002B140092001A4FA5 /* BudgetPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetPicker.swift; sourceTree = "<group>"; };
 		129E82FA2B1176D6002FFA62 /* Shekels.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shekels.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		129E82FD2B1176D6002FFA62 /* ShekelsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShekelsApp.swift; sourceTree = "<group>"; };
 		129E82FF2B1176D6002FFA62 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 		129E83692B11C8BC002FFA62 /* ReminderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDetailView.swift; sourceTree = "<group>"; };
 		129E836B2B11D18E002FFA62 /* BudgetListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetListDetailView.swift; sourceTree = "<group>"; };
 		129E836D2B11D1A3002FFA62 /* BudgetCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetCard.swift; sourceTree = "<group>"; };
+		129E836F2B125724002FFA62 /* SelectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectListView.swift; sourceTree = "<group>"; };
+		129E83712B125913002FFA62 /* IconPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconPickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +210,9 @@
 				129E83692B11C8BC002FFA62 /* ReminderDetailView.swift */,
 				129E836B2B11D18E002FFA62 /* BudgetListDetailView.swift */,
 				129E836D2B11D1A3002FFA62 /* BudgetCard.swift */,
+				129E836F2B125724002FFA62 /* SelectListView.swift */,
+				129E83712B125913002FFA62 /* IconPickerView.swift */,
+				125C9B002B140092001A4FA5 /* BudgetPicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -416,6 +425,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				129E834C2B11816C002FFA62 /* ReminderService.swift in Sources */,
+				125C9B012B140092001A4FA5 /* BudgetPicker.swift in Sources */,
+				129E83702B125724002FFA62 /* SelectListView.swift in Sources */,
 				129E83302B117808002FFA62 /* ShekelsModel.xcdatamodeld in Sources */,
 				129E83522B11AF23002FFA62 /* ReminderListView.swift in Sources */,
 				129E83362B117C30002FFA62 /* UIExtension.swift in Sources */,
@@ -431,6 +442,7 @@
 				129E834A2B118108002FFA62 /* NotificationManager.swift in Sources */,
 				129E83402B117D0F002FFA62 /* PreviewData.swift in Sources */,
 				129E83002B1176D6002FFA62 /* ContentView.swift in Sources */,
+				129E83722B125913002FFA62 /* IconPickerView.swift in Sources */,
 				129E835E2B11BDEB002FFA62 /* TabModel.swift in Sources */,
 				129E83642B11BE84002FFA62 /* TabShape.swift in Sources */,
 				129E82FE2B1176D6002FFA62 /* ShekelsApp.swift in Sources */,

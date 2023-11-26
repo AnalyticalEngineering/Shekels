@@ -47,7 +47,8 @@ extension Color {
     static let launch = LaunchTheme( )
     static let darkGray = Color(red: 27/255, green: 27/255, blue: 30/255) // dark gray
     static let offWhite = Color(red: 242/255, green: 242/255, blue: 246/255) // offwhite
-        
+    static let vaguelyOrange = Color(red: 255/39, green: 216/43, blue: 146/100)
+    static let rust = Color(red: 255/18, green:179/43, blue: 146/100)
     }
 
 
@@ -56,13 +57,13 @@ struct ColorTheme {
     
     let colorAccent = Color("AccentColor")
     let colorSecondaryText = Color("SecondaryTextColor")
-    let colorGreen = Color("ColorGreen")
-    let colorRed = Color("ColorRed")
-    let colorOrange = Color("ColorOrange")
-    let colorBlue = Color("ColorBlue")
-    let colorGrey = Color("ColorGrey")
-    let colorGray = Color("ColorGray")
-    let colorBlack = Color("ColorBlack")
+    let colorGreen = Color("Green")
+    let colorRed = Color("Red")
+    let colorOrange = Color("Orange")
+    let colorBlue = Color("Blue")
+    let colorGrey = Color("Grey")
+    let colorGray = Color("Gray")
+    let colorBlack = Color("Black")
     let colorBackground = Color("ColorBackground")
     
 }
