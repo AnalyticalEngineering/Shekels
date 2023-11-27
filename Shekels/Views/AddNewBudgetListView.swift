@@ -19,16 +19,18 @@ struct AddNewBudgetListView: View {
     
     let onSave: (String,String, UIColor) -> Void
     
-    private var isFormValid: Bool {
-        !name.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty
-    }
+    
     
     var body: some View {
                 
                 Form{
                     BudgetPicker()
                         .padding(.horizontal)
+                   
+                  
                     IconPickerView(selectedIcon: $selectedIcon, selectedColor: $selectedColor)
+                       
+                     
                     TextField("Enter total amount for budget", value: $totAmount, format: .currency(code:Locale.current.currency?.identifier ?? "USD"))
                         .keyboardType(.decimalPad)
                         .multilineTextAlignment(.center)
@@ -65,7 +67,6 @@ struct AddNewBudgetListView: View {
                             onSave(name, selectedIcon, UIColor(selectedColor))
                             dismiss()
                         }
-                        .disabled(!isFormValid)
                         .fontDesign(.serif)
                         .font(.title3)
                         .fontWeight(.bold)

@@ -72,64 +72,72 @@ struct HomeView: View {
                 }
                 .padding([.leading, .trailing], 10)
                 VStack{
-                ScrollView{
-                    Text("Budgets")
-                        .offset(y: /*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
-                        .offset(x: -120)
-                        .font(.title2)
-                        .fontWeight(.heavy)
-                        .foregroundStyle(.primary)
-                        .padding(.horizontal)
-                    
-                    //MARK:  BUDGET LIST VIEW
-                    BudgetListView( budgetList: budgetListResults)
-                }  .listStyle(.plain)
+                    ScrollView{
+                        Text("Budgets")
+                            .offset(y: /*@START_MENU_TOKEN@*/10.0/*@END_MENU_TOKEN@*/)
+                            .offset(x: -120)
+                            .font(.title2)
+                            .fontWeight(.heavy)
+                            .foregroundStyle(.primary)
+                            .padding(.horizontal)
+                        
+                        //MARK:  BUDGET LIST VIEW
+                        BudgetListView( budgetList: budgetListResults)
+                    }  .listStyle(.plain)
                 }
             }.navigationTitle("Budgets & Bills")
-            .toolbar{
-                //MARK:  TOOL BAR
-                ToolbarItem( placement: .topBarTrailing) {
-                    Button {
-                        isPresented = true
-                    } label: {
-                        ZStack{
-                            Circle()
-                            Image(systemName: "plus")
-                                .foregroundStyle(.white)
-                        }
-                        .font(.title3)
-                        .fontWeight(.bold)
-                        .frame(width: 30, height: 30)
-                    }
-                    }
-                }
-            .toolbar{
-                ToolbarItem(placement: .topBarLeading) {
-                    Button {
-                        HapticManager.notification(type: .success)
-                        print("menu")
-                    } label: {
-                        Image(systemName: "line.3.horizontal")
-                            .fontDesign(.serif)
+                .toolbar{
+                    //MARK:  TOOL BAR
+                    ToolbarItem( placement: .topBarTrailing) {
+                        Button {
+                            isPresented = true
+                        } label: {
+                            ZStack{
+                                Circle()
+                                Image(systemName: "plus")
+                                    .foregroundStyle(.white)
+                            }
                             .font(.title3)
                             .fontWeight(.bold)
-                    }
-                }
-            }
-            }
-        .searchable(text: $search)
-            .sheet(isPresented: $isPresented) {
-                NavigationView {
-                    AddNewBudgetListView { name, icon, color in
-                        do {
-                            try ReminderService.saveBudgetList(name, icon: icon, color )
-                        } catch {
-                            print(error)
+                            .frame(width: 30, height: 30)
                         }
                     }
-                  
                 }
+                .toolbar{
+                    ToolbarItem(placement: .topBarLeading) {
+                        Button {
+                            HapticManager.notification(type: .success)
+                            print("menu")
+                        } label: {
+                            Image(systemName: "line.3.horizontal")
+                                .fontDesign(.serif)
+                                .font(.title3)
+                                .fontWeight(.bold)
+                        }
+                    }
+                }
+        }
+        .searchable(text: $search)
+        .sheet(isPresented: $isPresented) {
+            NavigationView {
+                AddNewBudgetListView { name, icon, color in
+                    
+                    do {
+                        try ReminderService.saveBudgetList(name, icon: icon, color )
+                    } catch {
+                        print(error)
+                    }
+                }
+                
             }
+            .presentationDetents([
+                .height(300),   // 100 points
+                .fraction(0.4), // 20% of the available height
+                .medium,        // Takes up about half the screen
+                .large])        // The previously default sheet size
+            .edgesIgnoringSafeArea(.all)
+        }
+    
         .onChange(of: search, perform: { searchTerm in
             searching = !searchTerm.isEmpty ? true: false
             searchResults.nsPredicate = ReminderService.getRemindersBySearchTerm(search).predicate
